@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a1adce;
+}
+
+.container {
+  background-color: #fff;
+  height: 670px;
+  width: 350px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  margin: 0.5rem 1rem 1rem 0.6rem;
+}
+
+.input {
+  margin-right: 1rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1.4rem;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.city-container {
+  display: flex;
+  margin-left: 1.5rem;
+  align-items: baseline;
+  margin-bottom: 1.5rem;
+}
+
+.city-name {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #222;
+}
+
+.country-name {
+  color: #999;
+}
+
+.weather-container {
+  background-color: #4a73fc;
+  width: 300px;
+  height: 500px;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.today-weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 65%;
+}
+
+.icon {
+  margin-top: 1.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.weather-description {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.date {
+  color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 1.3rem;
+}
+
+.today-temperature {
+  font-size: 4rem;
+  color: white;
+}
+
+.air-conditions-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  min-height: 35%;
+}
+
+.air-conditions-container div {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  width: 150px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 0.3rem 1rem;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.air-conditions-container div:nth-child(1),
+.air-conditions-container div:nth-child(3) {
+  border-left: none;
+}
+.air-conditions-container div:nth-child(2),
+.air-conditions-container div:nth-child(4) {
+  border-right: none;
+}
+.air-conditions-container div:nth-child(3),
+.air-conditions-container div:nth-child(4) {
+  border-bottom: none;
+}
+
+.air-conditions-container div span {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 0.3rem;
+  text-transform: lowercase;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="menu">
+            <form id="form"><input type="text" class="input" placeholder="Search by location" data-input autocomplete="off"></form>
+        </header>
+        <div class="main-section">
+            <div class="city-container">
+                <span class="city-name" data-city-name></span>
+                 <span class="country-name" data-country-name></span>
+            </div>
+            <div class="weather-container">
+                <div class="today-weather">
+                    <div class="icon" data-icon></div>
+                    <span class="weather-description" data-weather-description></span>
+                    <small class="date" data-date></small>
+                    <span class="today-temperature" data-temperature></span>
+                </div>
+                <div class="air-conditions-container">
+                    <div class="wind">wind <span data-wind></span></div>
+                    <div class="fells-like">feels like <span data-feels-like></span></div>
+                    <div class="pressure">pressure <span data-pressure></span></div>
+                    <div class="humidity">humidity <span data-humidity></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
